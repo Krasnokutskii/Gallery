@@ -11,15 +11,12 @@ class DetailPaggedViewController: UIViewController, UICollectionViewDelegate, UI
     
     @IBOutlet var collectionView: UICollectionView!
     
-    private var images: [UIImage] = ImageStorage.shared.images
-    
     lazy var selectedIndexPath: IndexPath = IndexPath(index: 0 )
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if #available(iOS 15, *) {
             let appearance = UINavigationBarAppearance()
-            //appearance.configureWithOpaqueBackground()
             appearance.configureWithTransparentBackground()
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
@@ -27,13 +24,7 @@ class DetailPaggedViewController: UIViewController, UICollectionViewDelegate, UI
         collectionView.delegate = self
         collectionView.dataSource = self
         addBackgroundGradient()
-        
-        
-        
-        // helo
-        // some new line to check new fiches in xcode 15 source control
-        //some more lines
-        
+       
     }
     
     private func addBackgroundGradient() {
@@ -63,12 +54,12 @@ class DetailPaggedViewController: UIViewController, UICollectionViewDelegate, UI
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return ImageStorage.shared.images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! DefaultCollectionViewCell
-        cell.cellImage.image = images[indexPath.row]
+        cell.cellImage.image = ImageStorage.shared.images[indexPath.row]
         return cell
     }
 
