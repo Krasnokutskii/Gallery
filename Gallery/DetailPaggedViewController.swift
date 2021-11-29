@@ -27,7 +27,9 @@ class DetailPaggedViewController: UIViewController, UICollectionViewDelegate, UI
         collectionView.delegate = self
         collectionView.dataSource = self
         addBackgroundGradient()
+        //added some coments
         
+        //some new code
         
     }
     
