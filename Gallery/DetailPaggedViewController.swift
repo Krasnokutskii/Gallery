@@ -28,6 +28,11 @@ class DetailPaggedViewController: UIViewController, UICollectionViewDelegate, UI
         collectionView.dataSource = self
         addBackgroundGradient()
         
+        
+        
+        // helo 
+        // some new line to check new fiches in xcode 15 source control
+        
     }
     
     private func addBackgroundGradient() {
