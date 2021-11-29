@@ -15,7 +15,6 @@
 		D4FBD8C0273BA7A6004366C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FBD8BE273BA7A6004366C1 /* LaunchScreen.storyboard */; };
 		D4FBD8C8273BA895004366C1 /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FBD8C7273BA895004366C1 /* GalleryCollectionViewController.swift */; };
 		D4FBD8CA273BCB7F004366C1 /* DefaultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FBD8C9273BCB7F004366C1 /* DefaultCollectionViewCell.swift */; };
-		D4FBD8CC273BDA21004366C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FBD8CB273BDA21004366C1 /* DetailViewController.swift */; };
 		D4FBD8CE273BE2F4004366C1 /* CarouselCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FBD8CD273BE2F4004366C1 /* CarouselCollectionViewController.swift */; };
 		D4FBD8D0273BE47D004366C1 /* ZoomAndSnapFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FBD8CF273BE47D004366C1 /* ZoomAndSnapFlowLayout.swift */; };
 		D4FBD8D4273C01CB004366C1 /* ImageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FBD8D3273C01CB004366C1 /* ImageStorage.swift */; };
@@ -32,7 +31,6 @@
 		D4FBD8C1273BA7A6004366C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4FBD8C7273BA895004366C1 /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		D4FBD8C9273BCB7F004366C1 /* DefaultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewCell.swift; sourceTree = "<group>"; };
-		D4FBD8CB273BDA21004366C1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D4FBD8CD273BE2F4004366C1 /* CarouselCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewController.swift; sourceTree = "<group>"; };
 		D4FBD8CF273BE47D004366C1 /* ZoomAndSnapFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAndSnapFlowLayout.swift; sourceTree = "<group>"; };
 		D4FBD8D3273C01CB004366C1 /* ImageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStorage.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				D4FBD8BC273BA7A6004366C1 /* Assets.xcassets */,
 				D4FBD8BE273BA7A6004366C1 /* LaunchScreen.storyboard */,
 				D4FBD8C1273BA7A6004366C1 /* Info.plist */,
-				D4FBD8CB273BDA21004366C1 /* DetailViewController.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -161,7 +158,6 @@
 				D4FBD8D0273BE47D004366C1 /* ZoomAndSnapFlowLayout.swift in Sources */,
 				D4FBD8C8273BA895004366C1 /* GalleryCollectionViewController.swift in Sources */,
 				D4FBD8CE273BE2F4004366C1 /* CarouselCollectionViewController.swift in Sources */,
-				D4FBD8CC273BDA21004366C1 /* DetailViewController.swift in Sources */,
 				D4FBD8CA273BCB7F004366C1 /* DefaultCollectionViewCell.swift in Sources */,
 				D4FBD8D4273C01CB004366C1 /* ImageStorage.swift in Sources */,
 				D4FBD8B6273BA7A2004366C1 /* SceneDelegate.swift in Sources */,
