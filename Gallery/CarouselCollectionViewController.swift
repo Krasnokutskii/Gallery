@@ -12,9 +12,6 @@ private let reuseIdentifier = "Cell"
 class CarouselCollectionViewController: UICollectionViewController {
     
     let flowLayout = ZoomAndSnapFlowLayout()
-    private var images = ImageStorage.shared.images
-    private var indexPath = ImageStorage.shared.indexPath
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +34,13 @@ class CarouselCollectionViewController: UICollectionViewController {
       }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+        return ImageStorage.shared.images.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! DefaultCollectionViewCell
         cell.backgroundColor = .black
-        cell.cellImage.image = images[indexPath.row]
+        cell.cellImage.image = ImageStorage.shared.images[indexPath.row]
         cell.cellImage.contentMode = .scaleAspectFill
         return cell
     }
