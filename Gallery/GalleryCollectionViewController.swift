@@ -55,7 +55,6 @@ class GalleryCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailPaggedViewController") as! DetailPaggedViewController
         vc.selectedIndexPath = indexPath
-        ImageStorage.shared.indexPath = indexPath
         self.navigationController?.pushViewController(vc, animated: true)
         
     }

@@ -10,7 +10,6 @@ import UIKit
 
 class ImageStorage{
     var images = [UIImage]()
-    var indexPath: IndexPath = IndexPath(item: 0, section: 0)
     
     static var shared: ImageStorage = {
         let instance = ImageStorage()
