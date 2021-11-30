@@ -37,7 +37,6 @@ class DetailPaggedViewController: UIViewController, UICollectionViewDelegate, UI
         gradientLayer.colors = [#colorLiteral(red: 0.1997549087, green: 0.07058823854, blue: 0.3019607961, alpha: 1).cgColor, UIColor.black.cgColor]
         collectionView.backgroundView = collectionViewBackgroundView
         collectionView.backgroundView?.layer.addSublayer(gradientLayer)
-        //view.layer.addSublayer(gradientLayer)
       }
     
     override func viewWillLayoutSubviews() {
